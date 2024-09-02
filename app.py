@@ -11,7 +11,8 @@ class MainApp(App):
         self.last_button = None
 
         main_layout = BoxLayout(orientation = "vertical")
-        self.solution = TextInput(background_color = "black", foreground_color = "white")
+        self.solution = TextInput(background_color = "black", foreground_color = "white",
+                                  multiline=False, halign="right")
 
         main_layout.add_widget(self.solution)
         buttons = [
